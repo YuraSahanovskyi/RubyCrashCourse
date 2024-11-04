@@ -65,39 +65,39 @@ class Student
 end
 
 
-st1 = Student.new('Surname1', 'Name1', '2000-1-1')
-st2 = Student.new('Surname2', 'Name2', '2002-2-2')
-Student.add_student(st1)
-Student.add_student(st2)
+# st1 = Student.new('Surname1', 'Name1', '2000-1-1')
+# st2 = Student.new('Surname2', 'Name2', '2002-2-2')
+# Student.add_student(st1)
+# Student.add_student(st2)
 
-begin
-  Student.new('Surname3', "Name3", "2025-1-1")
-rescue ArgumentError => e
-  puts "Error: #{e.message}"
-end
+# begin
+#   Student.new('Surname3', "Name3", "2025-1-1")
+# rescue ArgumentError => e
+#   puts "Error: #{e.message}"
+# end
 
-begin
-  st4 = Student.new('Surname2', 'Name2', '2002-2-2')
-  Student.add_student(st4)
-rescue ArgumentError => e
-  puts "Error: #{e.message}"
-end
+# begin
+#   st4 = Student.new('Surname2', 'Name2', '2002-2-2')
+#   Student.add_student(st4)
+# rescue ArgumentError => e
+#   puts "Error: #{e.message}"
+# end
 
-students_named = Student.get_students_by_name("Name1")
-puts "Student with name Name1"
-puts students_named
-puts
+# students_named = Student.get_students_by_name("Name1")
+# puts "Student with name Name1"
+# puts students_named
+# puts
 
-st5 = students_named.first
-age = st5.calculate_age
-puts "Age #{age}\n\r"
+# st5 = students_named.first
+# age = st5.calculate_age
+# puts "Age #{age}\n\r"
 
-students_aged = Student.get_students_by_age(age)
-puts "Student with age #{age}"
-puts students_aged
-puts
+# students_aged = Student.get_students_by_age(age)
+# puts "Student with age #{age}"
+# puts students_aged
+# puts
 
-Student.remove_student(st2)
+# Student.remove_student(st2)
 
 
-Student.print_students
+# Student.print_students
